@@ -14,7 +14,7 @@ En Python, es una buena práctica crear un entorno específico de un espacio de 
 ## Entorno virtual local:
 Este tipo de entorno te permite instalar módulos de python sin afectar otros entornos aislando la instalación de los módulos del espacio de trabajo. 
 
-### Creación de entorno virtual local en VSCode
+## Creación de entorno virtual local en VSCode
 
 - Abrir la paleta de comandos, __Command Palette__ (`Ctrl+Shift+P`). Buscar y seleccionar el comando **Python: Create Environment**
 
@@ -32,9 +32,37 @@ Este tipo de entorno te permite instalar módulos de python sin afectar otros en
 
 ![image](https://github.com/Grupo-de-Computacion-de-la-FI-UNER/pa-repositorio-practica-inicial/assets/69655502/3dfa9981-1901-4218-8b58-fd63aca44ecb)
 
+- Una vez creado nuestro entorno virtual, el mismo debe ser activado usando el siguiente comando en la terminal de VSCode:
+  `& .venv\Scripts\Activate.ps1`
+
 ### ⚠️ 
-En Windows al ejecutar la aplicación del proyecto nos puede aparecer el mensaje:
-"Activate.ps1 is not digitally signed. You cannot run this script on the current system." 
+En Windows al ejecutar el comando anterior nos puede aparecer el mensaje:
+"File D:\ProgAvanzadaPython\Ejercicios\TrabajoPractico_1\.venv\Scripts\Activate.ps1 cannot be loaded because running scripts is disabled on this system. 
+For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170." 
 En este caso es necesario ingresar el siguiente comando en la terminal: 
 
 `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process`
+
+- Al ejecutar los comandos anteriores, aparece la etiqueta (.venv) en la entrada de comando indicando que se activó el entorno:
+  
+![image](https://github.com/Grupo-de-Computacion-de-la-FI-UNER/pa-repositorio-practica-inicial/assets/69655502/e7eb213b-c861-49bd-a81f-661734086727)
+
+- Una vez activado nuestro entorno, podemos instalar los módulos necesarios para nuestro proyecto usando pip desde la terminal de VSCode.
+  
+- Para desactivar el entorno ejecutar `deactivate` en la terminal de VSCode
+
+## Generación del archivo "requirements.txt"
+
+"requirements.txt" es el archivo que guardará los nombres de los módulos instalados para nuestro proyecto, así como las versiones de los mismos.
+
+Para generar este archivo en la carpeta `deps/` ejecutar en la terminal de VSCode: 
+
+`pip freeze > deps/requirements.txt`. 
+
+Un archivo con ese nombre se creará en la carpeta correspondiente de nuestro proyecto. Un ejemplo del mismo se puede ver a continuación:
+
+![image](https://github.com/Grupo-de-Computacion-de-la-FI-UNER/pa-repositorio-practica-inicial/assets/69655502/88ff5f05-b8c1-45cd-8c28-c31f3eed5999)
+
+En el futuro se puede reproducir este entorno a partir del "requirements.txt", ejecutando el siguiente comando en un entorno virtual nuevo:
+
+`pip install -r deps/requirements.txt`
