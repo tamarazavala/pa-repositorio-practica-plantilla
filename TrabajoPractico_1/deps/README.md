@@ -1,3 +1,40 @@
-## Dependencias del proyecto
+# Dependencias del proyecto
 
-Carpeta para registrar los módulos que necesitan ser instalados para que nuestro proyecto funcione correctamente.
+Carpeta para registrar los módulos que necesiten ser instalados para que nuestro proyecto sea reproducible.
+
+# Uso de entornos visuales
+
+Un "Entorno" en Python es el contexto en el que se ejecuta un programa de Python que consta de un intérprete y una cantidad de paquetes instalados.
+
+## Entorno global:
+Por defecto, cualquier intérprete de Python instalado se ejecuta en su propio entorno global. Por ejemplo, si se ejecuta el comando python o python3 en alguna terminal (dependiendo de cómo se haya instalado Python), se estaría ejecutando en el entorno global de ese intérprete. Cualquier paquete que se instale o desinstale afecta el entorno global y por tanto todos los programas que se ejecutan en él.
+
+En Python, es una buena práctica crear un entorno específico de un espacio de trabajo o entorno virtual local.
+
+## Entorno virtual local:
+Este tipo de entorno te permite instalar módulos de python sin afectar otros entornos aislando la instalación de los módulos del espacio de trabajo. 
+
+### Creación de entorno virtual local en VSCode
+
+- Abrir la paleta de comandos, __Command Palette__ (`Ctrl+Shift+P`). Buscar y seleccionar el comando **Python: Create Environment**
+
+![image](https://github.com/Grupo-de-Computacion-de-la-FI-UNER/pa-repositorio-practica-inicial/assets/69655502/e951cfc3-929b-4f2d-ae58-01907f988e30)
+
+- Una vez seleccionado el comando, se presenta una lista de tipos de entornos: **Venv** o **Conda**
+ 
+![image](https://github.com/Grupo-de-Computacion-de-la-FI-UNER/pa-repositorio-practica-inicial/assets/69655502/e50df50f-f5c9-446d-b73d-afc8ba422fec)
+
+- Seleccionar el tipo de entorno **Venv**, el comando presenta una lista de los intérpretes disponibles que pueden utilizarse como base para el nuevo entorno virtual
+
+![image](https://github.com/Grupo-de-Computacion-de-la-FI-UNER/pa-repositorio-practica-inicial/assets/69655502/fd4f8179-befd-4260-b4cb-04d104ebb593)
+
+- Luego de seleccionar el intérprete, se mostrará una notificación con el progreso de la creación de la carpeta del entorno
+
+![image](https://github.com/Grupo-de-Computacion-de-la-FI-UNER/pa-repositorio-practica-inicial/assets/69655502/3dfa9981-1901-4218-8b58-fd63aca44ecb)
+
+### ⚠️ 
+En Windows al ejecutar la aplicación del proyecto nos puede aparecer el mensaje:
+"Activate.ps1 is not digitally signed. You cannot run this script on the current system." 
+En este caso es necesario ingresar el siguiente comando en la terminal: 
+
+`Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process`
