@@ -1,1 +1,1 @@
-Carpeta para registrar los módulos que necesitan ser instalados para que nuestro proyecto funciones.
+Carpeta para registrar los módulos que necesitan ser instalados para que nuestro proyecto funcione correctamente.
