@@ -18,19 +18,19 @@ Este tipo de entorno te permite instalar módulos de python sin afectar otros en
 
 - Abrir la paleta de comandos, __Command Palette__ (`Ctrl+Shift+P`). Buscar y seleccionar el comando **Python: Create Environment**
 
-![image](https://github.com/Grupo-de-Computacion-de-la-FI-UNER/pa-repositorio-practica-inicial/assets/69655502/e951cfc3-929b-4f2d-ae58-01907f988e30)
+![image](https://github.com/Grupo-de-Computacion-de-la-FI-UNER/pa-repositorio-practica-inicial/assets/69655502/fc049bfd-75ee-47fb-845f-fec47f9b245b)
 
 - Una vez seleccionado el comando, se presenta una lista de tipos de entornos: **Venv** o **Conda**
  
-![image](https://github.com/Grupo-de-Computacion-de-la-FI-UNER/pa-repositorio-practica-inicial/assets/69655502/e50df50f-f5c9-446d-b73d-afc8ba422fec)
+![image](https://github.com/Grupo-de-Computacion-de-la-FI-UNER/pa-repositorio-practica-inicial/assets/69655502/138d7966-d259-4d26-a69a-de6d4f2cbb5c)
 
 - Seleccionar el tipo de entorno **Venv**, el comando presenta una lista de los intérpretes disponibles que pueden utilizarse como base para el nuevo entorno virtual
 
-![image](https://github.com/Grupo-de-Computacion-de-la-FI-UNER/pa-repositorio-practica-inicial/assets/69655502/fd4f8179-befd-4260-b4cb-04d104ebb593)
+![image](https://github.com/Grupo-de-Computacion-de-la-FI-UNER/pa-repositorio-practica-inicial/assets/69655502/4ea200f3-f2dd-4395-9112-3fa6c31a6e95)
 
 - Luego de seleccionar el intérprete, se mostrará una notificación con el progreso de la creación de la carpeta del entorno
 
-![image](https://github.com/Grupo-de-Computacion-de-la-FI-UNER/pa-repositorio-practica-inicial/assets/69655502/3dfa9981-1901-4218-8b58-fd63aca44ecb)
+![image](https://github.com/Grupo-de-Computacion-de-la-FI-UNER/pa-repositorio-practica-inicial/assets/69655502/b3671f70-d54e-4a38-85e3-7befe227c86b)
 
 - Una vez creado nuestro entorno virtual, el mismo debe ser activado usando el siguiente comando en la terminal de VSCode:
   `& .venv\Scripts\Activate.ps1`
@@ -45,7 +45,7 @@ En este caso es necesario ingresar el siguiente comando en la terminal:
 
 - Al ejecutar los comandos anteriores, aparece la etiqueta (.venv) en la entrada de comando indicando que se activó el entorno:
   
-![image](https://github.com/Grupo-de-Computacion-de-la-FI-UNER/pa-repositorio-practica-inicial/assets/69655502/e7eb213b-c861-49bd-a81f-661734086727)
+![image](https://github.com/Grupo-de-Computacion-de-la-FI-UNER/pa-repositorio-practica-inicial/assets/69655502/5bc9e8c4-8b32-4ff1-9dcb-343e3472f1e7)
 
 - Una vez activado nuestro entorno, podemos instalar los módulos necesarios para nuestro proyecto usando pip desde la terminal de VSCode.
   
@@ -61,7 +61,7 @@ Para generar este archivo en la carpeta `deps/` ejecutar en la terminal de VSCod
 
 Un archivo con ese nombre se creará en la carpeta correspondiente de nuestro proyecto. Un ejemplo del mismo se puede ver a continuación:
 
-![image](https://github.com/Grupo-de-Computacion-de-la-FI-UNER/pa-repositorio-practica-inicial/assets/69655502/88ff5f05-b8c1-45cd-8c28-c31f3eed5999)
+![image](https://github.com/Grupo-de-Computacion-de-la-FI-UNER/pa-repositorio-practica-inicial/assets/69655502/82bbe65e-8329-4579-bd12-102e317b628f)
 
 En el futuro se puede reproducir este entorno a partir del "requirements.txt", ejecutando el siguiente comando en un entorno virtual nuevo:
 
