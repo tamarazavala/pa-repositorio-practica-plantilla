@@ -2,7 +2,7 @@
 
 Carpeta para registrar los módulos que necesiten ser instalados para que nuestro proyecto sea reproducible.
 
-# Uso de entornos visuales
+# Uso de entornos virtuales
 
 Un "Entorno" en Python es el contexto en el que se ejecuta un programa de Python que consta de un intérprete y una cantidad de paquetes instalados.
 
