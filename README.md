@@ -1,2 +1,2 @@
-# pa-repositorio-practica-inicial
-Repositorio inicial para clases de práctica de Programación Avanzada
+# repositorio-practica-inicial
+Repositorio inicial para el desarrollo de los TPs de la asignatura
